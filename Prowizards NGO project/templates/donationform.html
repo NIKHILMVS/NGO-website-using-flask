@@ -1,0 +1,25 @@
+
+<form action = "http://localhost:5000/result" method = "POST" align="center">
+<head align="center">
+<h1 text-align: center;>NGO Donation Form</h1>
+</head>
+   <p><b>Please Enter Your Name Here: </b><input type = "text" name = "Name" /></p>
+   
+<label for="Donation"><b>Please Choose a Method of Donation Here:</b></label><br>
+  <input type="radio" id="Product Purchase" name="Type of Donation" value="Product Purchase">
+  <label for="Product Purchase">Product Purchase</label><br>
+  <input type="radio" id="Simple Donation" name="Type of Donation" value="Simple Donation">
+  
+  <label for="Simple Donation">Simple Donation</label><br>
+  <br>
+      <label for="amount"><b>Choose an amount</b></label>
+	  
+  <select name="amount" id="amount">
+      <option value="100">100</option>
+      <option value="200">200</option>
+	  <option value="500">500</option>
+	  <option value="1000">1000</option>
+	  <option value="2000">2000</option>
+  </select>
+   <p><input type = "submit" value = "submit" /></p>
+</form>

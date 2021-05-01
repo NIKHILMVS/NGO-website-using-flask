@@ -1,0 +1,24 @@
+
+<!doctype html>
+  <body class="body">
+  <table border = 1 align="center">
+    {% for key, value in result.items() %}
+    <tr>
+        <td>{{ key | capitalize }}</td>
+	   {% if key=="Name" %}
+       <td>{{ value | upper}}</td>
+		{% else %}
+        <td >{{ value}}</td>
+		{% endif %}
+    </tr>
+    {% endfor %}
+
+ </table>
+ <p style="text-align:center"><b>We Thank you for your generous donation </b></p>
+ 
+ <p style="text-align:center"><b>Please click the "Download" button below to download the e-certificate </b></p>
+
+     <div class="container" align="center">
+      <a href="http://localhost:5000/downloads/{{result["Name"]+" "+result["Type of Donation"]+" "+result["amount"]}}" target="blank">Download</a>
+     </div>
+  </body>
